@@ -10,6 +10,7 @@ def fIsEmpty(stk):
 def fPush(stk,item):
     stk.append(item)
     top = len(stk)
+
 def fPop(stk):
     if (fIsEmpty(stk)):
         return ('Underflow')
@@ -50,6 +51,7 @@ while True:
         fPush(lStack,item)
         print('%d added sucessfully'%item)
         input('Press any key to continue')
+
     elif(ch == 2):
         item = fPop(lStack)
         if (item == 'Underflow'):
@@ -57,17 +59,21 @@ while True:
         else:
             print ('%d is popped'%item)
         print ('Press any key to continue')
+
     elif(ch == 3):
         item = fPeek(lStack)
         if (item == 'Underflow'):
             print ('Stack is empty')
         else:
             print('%d is at the top'%item)
+
     elif(ch == 4):
         fDisplay(lStack)
         input('Press any key to continue')
+
     elif(ch == 5):
         break
+
     else:
          print('Wrong Input. \n')
          print ('Please give input between 1 to 5 \n')
