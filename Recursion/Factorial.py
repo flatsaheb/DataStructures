@@ -7,5 +7,5 @@ def f_Fact(n):
         print ("Factorial value is {}".format(n))
         return(n*f_Fact(n-1))
 
-print (f_Fact(0))
+print (f_Fact(9))
 
