@@ -26,7 +26,7 @@ def fPeek(stk):
     if (fIsEmpty(stk)):
         return 'Underfow'
     else:
-        top = len(stk) - 1
+        top = len(stk) - 2
         return(stk[top])
 
 def fDisplay(stk):
