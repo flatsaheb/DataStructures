@@ -12,36 +12,36 @@ element = CPyStack.CStack(lStack)
 
 # Class to implement validation function.
 class CExprTest:
-    def __init__(self,l_ExprArray):
+    def __init__(self, l_ExprArray):
         self.lExpr = l_ExprArray
 
 
-    def fMatchChar(self,l_InitalChar,l_TerminalChar):
-        if (l_InitalChar == '(' and l_TerminalChar == ')'):
+    def fMatchChar(self, l_InitalChar, l_TerminalChar):
+        if l_InitalChar == '(' and l_TerminalChar == ')':
             return 1
-        elif (l_InitalChar == '{'and l_TerminalChar == '}'):
+        elif l_InitalChar == '{'and l_TerminalChar == '}':
             return 1
-        elif (l_InitalChar == '[' and l_TerminalChar == ']'):
+        elif l_InitalChar == '[' and l_TerminalChar == ']':
             return 1
-        else :
+        else:
             return 0
 
 
     def fCheckExpression(self,l_ExprArray):
-        for i in range(0,len(l_ExprArray)):
-            if (l_ExprArray[i] == '(' or l_ExprArray[i] == '{' or l_ExprArray[i] == '['):
-                element.fPush(lStack,l_ExprArray[i])
-            if (l_ExprArray[i] == ')' or l_ExprArray[i] == '}' or l_ExprArray[i] == ']'):
+        for i in range(0, len(l_ExprArray)):
+            if l_ExprArray[i] == '(' or l_ExprArray[i] == '{' or l_ExprArray[i] == '[':
+                element.fPush(lStack, l_ExprArray[i])
+            if l_ExprArray[i] == ')' or l_ExprArray[i] == '}' or l_ExprArray[i] == ']':
                 if element.fIsEmpty(lStack):
                     print('Error: Right symbols are more than Left')
                     return 0
                 else:
                     lTempChar = element.fPop(lStack)
-                    if (not self.fMatchChar(lTempChar,l_ExprArray[i])):
+                    if not self.fMatchChar(lTempChar, l_ExprArray[i]):
                         print('Error: Unmatched symbol found')
                         return 0
 
-        if(element.fIsEmpty(lStack)):
+        if element.fIsEmpty(lStack):
             print('Stack is empty all open and close parenthesis match')
             return 1
         else:
@@ -53,9 +53,9 @@ def main():
     lExprObj = CExprTest(lExpression)
     lValidity = lExprObj.fCheckExpression(lExpression)
 
-    if (lValidity == 1):
+    if lValidity == 1:
         print("Expression is Valid")
-    if (lValidity == 0):
+    if lValidity == 0:
         print("Expression is invalid")
 
 if __name__ == "__main__":
