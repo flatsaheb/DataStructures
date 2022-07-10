@@ -22,9 +22,9 @@ class CExprTest:
         elif (l_InitalChar == '{'and l_TerminalChar == '}'):
             return 1
         elif (l_InitalChar == '[' and l_TerminalChar == ']'):
-         return 1
+            return 1
         else :
-         return 0
+            return 0
 
 
     def fCheckExpression(self,l_ExprArray):
