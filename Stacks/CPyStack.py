@@ -38,7 +38,7 @@ class CStack:
         if self.fIsEmpty(stk):
             return 'Underflow'
         else:
-            top = len(stk) - 2
+            top = len(stk) - 1
             return stk[top]
 
     def fDisplay(self,stk):
