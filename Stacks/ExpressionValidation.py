@@ -1,7 +1,7 @@
 '''
 Expression Validation program would check the validity of expression
 by checking the corresponding opening brace has closing brace. Stack data-structure
-has been used to process the validation. Class CPyStack containing
+has been used to process the validation. Class CStack containing
 basic stack operations has been used.
 '''
 
