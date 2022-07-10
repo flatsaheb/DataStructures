@@ -1,8 +1,12 @@
 
 '''
 Stack class implements the basic stack operations. It's functions
-can be used in various programs. fPush and fPop functions would be
-used to insert and delete the stack elements.
+can be used in various programs.
+fPush    - Insert element in stack
+fPop     - Remove last element from stack
+fPeek    - Pointer to last element in stack
+fDisplay - Display elements of stack
+fIsEmpty - Returns True when stck is empty else return False.
 '''
 class CStack:
     def __init__(self, stk):
