@@ -12,10 +12,16 @@ class BubbleSort:
         lArray[lIndex] = lArray[lIndex] - lArray[lIndex + 1]
         return lArray
 
-sort1 = BubbleSort([10,20,30,1,3])
-print (sort1.array)
-sort2 = BubbleSort([101,201,301,11,31])
-print(sort2.array)
+def main():
+    sort1 = BubbleSort([10,20,30,1,3])
+    print (sort1.array)
+    sort2 = BubbleSort([101,201,301,11,31])
+    print(sort2.array)
+
+if __name__ == "__main__":
+    main()
+
+
 '''
 Without Class 
 def fSwapCode(lArray,lIndex):
