@@ -39,6 +39,7 @@ def fOutputPostfix(l_Array):
         lPostFix = lPostFix + OElement.fPop(lStack)
     return lPostFix
 
+
 print(fOutputPostfix(list("A*B-(C+D)+E")))
 #print(fOutputPostfix(list("A*(B+C)-D")))
 print(fOutputPostfix(list("A*(B+C)")))
