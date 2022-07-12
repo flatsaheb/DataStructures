@@ -6,7 +6,7 @@ fPush    - Insert element in stack
 fPop     - Remove last element from stack
 fPeek    - Pointer to last element in stack
 fDisplay - Display elements of stack
-fIsEmpty - Returns True when stck is empty else return False.
+fIsEmpty - Returns True when stack is empty else return False.
 '''
 class CStack:
     def __init__(self, stk):
