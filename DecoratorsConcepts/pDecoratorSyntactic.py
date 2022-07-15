@@ -1,3 +1,7 @@
+'''
+Basic decorator functionality.
+'''
+
 import functools
 def dfHelloWord(df_helloworld):
     @functools.wraps(df_helloworld)
