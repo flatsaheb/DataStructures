@@ -27,7 +27,6 @@ lOperandStack = []
 OOperator = CPyStack.CStack(lOperatorStack)
 OOperand = CPyStack.CStack(lOperandStack)
 
-
 class InfixEvaluation:
     def __init__(self):
         pass
@@ -52,7 +51,6 @@ class InfixEvaluation:
         OOperand.fPush(lOperandStack, eval(lTotal))
 
     # Function to scan the input expression and push the operands and operators accordingly.
-    #
     def fInfixEval(self, l_Array):
         for i in range(0,len(l_Array)):
             if l_Array[i].isnumeric():
