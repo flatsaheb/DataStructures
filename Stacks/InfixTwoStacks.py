@@ -80,6 +80,8 @@ class InfixEvaluation:
                 OOperand.fPush(lOperandStack,eval(lOutput))
             else:
                 break
+        # When there is only two operands and one operator present then lOutput would be None
+        # In which case below condition would evaluate the Infix Expression.
         if not lOutput:
             lOutput = str(OOperand.fPeek(lOperandStack)) + ''
 
